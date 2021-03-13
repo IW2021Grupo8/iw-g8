@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ `git symbolic-ref HEAD` == "refs/heads/main" ]]
+then
+    echo "You cannot push to main!"
+    echo "Try again and you get fired!"
+    exit 1
+fi

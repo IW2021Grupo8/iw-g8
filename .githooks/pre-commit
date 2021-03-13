@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ `git symbolic-ref HEAD` == "refs/heads/main" ]]
+then
+    echo "You cannot commit to master!"
+    echo "Stash your changes and apply them to another branch"
+    echo "git stash"
+    echo "git checkout branch"
+    echo "git stash apply"
+    exit 1
+fi
