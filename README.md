@@ -27,11 +27,22 @@ Descarga
 Configuración de tu usuario
 
 > git config --global user.name "Nombre completo"
+>
 > git config --global user.email tuemail@uco.es
 
 Configuración de hooks para git
 
 > git config core.hooksPath .githooks
+
+---
+
+### Reuniones de seguimiento de equipo
+
+Pese a tener mucho contacto por chat (whassap/discord) para la realización de las tareas, también se han realizado las siguientes reuniones de equipo:
+
+* [2021-03-04 Selección de tema]((./meeting/2021-03-04.md))
+* [2021-03-10 Praparación de la primera reunión con cliente]((./meeting/2021-03-04.md))
+* [2021-03-11 Clase de prácticas - Reunión con cliente]((./meeting/2021-03-04.md))
 
 ---
 
