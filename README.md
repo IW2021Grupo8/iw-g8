@@ -45,7 +45,7 @@ Elaboración de una memoria que recoja detalladamente el objetivo a alcanzar y l
 
 Esta memoria consta de los siguientes apartados:
 
-* [Introducción](docs/p1/01-intro.md)
+* [Introducción](./docs/p1/01-intro.md)
 * [Definición del problema](./docs/p1/02-problem.md)
 * [Alcance del sistema](./docs/p1/03-)
 * [Objetivos](./docs/p1/04-)
