@@ -52,8 +52,10 @@ Esta memoria consta de los siguientes apartados:
 * [Antecedentes](./docs/p1/05-)
 * [Recursos](./docs/p1/06-resources.md)
 
+Puede consultar la versión PDF [aquí](./docs/files/p1grupo8.pdf)
+
 ---
 
 ## Práctica 2
 
-Ampliación de la memoria con la recopilación de requisitos
+Ampliación de la memoria con la recopilación de requisitos.
