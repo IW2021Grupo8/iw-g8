@@ -10,29 +10,18 @@ Como componentes del equipo de prácticas están:
 
 * David Barbero Jurado ([@d4vidsn8w](https://github.com/d4vidsn8w))
 * Antonio Haro Sánchez ([@antonioharo22](https://github.com/antonioharo22))
-* Daniel Ortega León ([@](https://github.com/))
-* Alberto Ortíz Arribas ([@i62orara](https://github.com/i62orara))
+* Daniel Ortega León ([@i72orled](https://github.com/i72orled))
+* Alberto Ortiz Arribas ([@i62orara](https://github.com/i62orara))
 * Cristina Quintana Cano ([@jautu](https://github.com/jautu))
 
 ---
 
 ### Configuración del entorno
 
-#### Repositorio
+La forma de trabajo seguida por el equipo se define como:
 
-Descarga
-
-> git clone git@github.com:IW2021Grupo8/iw.git
-
-Configuración de tu usuario
-
-> git config --global user.name "Nombre completo"
->
-> git config --global user.email tuemail@uco.es
-
-Configuración de hooks para git
-
-> git config core.hooksPath .githooks
+* [Configuración del repositorio](./docs/workflow/01-repository.md)
+* [Flujo de trabajo con Github](./docs/workflow/02-workflow.md)
 
 ---
 
@@ -40,9 +29,10 @@ Configuración de hooks para git
 
 Pese a tener mucho contacto por chat (whassap/discord) para la realización de las tareas, también se han realizado las siguientes reuniones de equipo:
 
-* [2021-03-04 Selección de tema]((./meeting/2021-03-04.md))
-* [2021-03-10 Praparación de la primera reunión con cliente]((./meeting/2021-03-04.md))
-* [2021-03-11 Clase de prácticas - Reunión con cliente]((./meeting/2021-03-04.md))
+* [2021-03-04 Selección de tema](./meeting/2021-03-04.md)
+* [2021-03-10 Praparación de la primera reunión con cliente](./meeting/2021-03-04.md)
+* [2021-03-11 Clase de prácticas - Reunión con cliente](./meeting/2021-03-04.md)
+* [2021-03-17 Revisión de la primera práctica](./meeting/2021-03-17.md)
 
 ---
 
