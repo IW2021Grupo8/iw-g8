@@ -45,12 +45,12 @@ Elaboración de una memoria que recoja detalladamente el objetivo a alcanzar y l
 
 Esta memoria consta de los siguientes apartados:
 
-* [Introducción](./docs/01-intro.md)
-* [Definición del problema](./docs/02-)
-* [Alcance del sistema](./docs/03-)
-* [Objetivos](./docs/04-)
-* [Antecedentes](./docs/05-)
-* [Recursos](./docs/06-)
+* [Introducción](docs/p1/01-intro.md)
+* [Definición del problema](./docs/p1/02-problem.md)
+* [Alcance del sistema](./docs/p1/03-)
+* [Objetivos](./docs/p1/04-)
+* [Antecedentes](./docs/p1/05-)
+* [Recursos](./docs/p1/06-)
 
 ---
 
