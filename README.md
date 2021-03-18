@@ -50,7 +50,7 @@ Esta memoria consta de los siguientes apartados:
 * [Alcance del sistema](./docs/p1/03-)
 * [Objetivos](./docs/p1/04-)
 * [Antecedentes](./docs/p1/05-)
-* [Recursos](./docs/p1/06-)
+* [Recursos](./docs/p1/06-resources.md)
 
 ---
 
