@@ -8,31 +8,37 @@
 
 ## Requisitos no funcionales
 
-### Requisitos no funcionales de producto
+## Requisitos de eficiencia
 
-Los requisitos no funcionales de producto
+__RNF-001__ Toda funcionalidad del sistema y/o transacción de negocio debe responder al usuario en menos de 5 segundos.
 
-### Requisitos no funcionales organizativos
+__RNF-002__ El sistema debe ser capaz de operar adecuadamente con hasta 10.000 usuarios con sesiones concurrentes.
 
-El sistema deberá permitir el registro de nuevos usuarios en la plataforma.
-
-El sistema debe permitir que los empresarios registrados creen y publiquen ofertas de empleo.
-
-Los agricultores podrán buscar aplicando un criterio de búsqueda, ofertas de empleo y podrán inscribirse en ellas si lo desean.
-
-Los agricultores podrán consultar las ofertas de empleo en las que se han inscrito.
-
-Empresas
+__RNF-003__ Los datos modificados en la base de datos deben ser actualizados para todos los usuarios que acceden en menos de 3 segundos.
 
 
-__RF-__ Cada oferta de empleo debe ser identificada por una clave alfanumérica única.
+## Requisitos de seguridad lógica y de datos
 
-__RF-__ El empresario debe poder hacer búsquedas sobre los agricultores.
+__RNF-004__ Los permisos de acceso al sistema podrán ser cambiados solamente por el administrador.
+
+__RNF-005__ El sistema debe asegurar que los datos estén protegidos del acceso no autorizado.
+
+## Requisitos de usabilidad
+
+__RNF-006__ El tiempo de aprendizaje del sistema por un usuario deberá ser menor a 3 horas.
+
+__RNF-007__ El sistema debe proporcionar mensajes de error que sean informativos y orientados a usuario final.
+
+__RNF-008__ La aplicación web debe poseer un diseño responsive con el fin de garantizar la adecuada visualización en múltiples dispositivos.
+
+__RNF-009__ El sistema debe poseer interfaces gráficas bien formadas.
 
 
-Agricultores
+## Requisitos de dependibilidad
 
-__RF-__ El agricultor debe poder hacer búsquedas, en base a diferentes criterios, sobre las ofertas de empleo.
+__RNF-010__ El sistema debe tener una disponibilidad del 99,99% de las veces en que un usuario intente acceder.
+
+__RNF-011__ La tasa de tiempos de falla del sistema no podrá ser mayor al 0,5% del tiempo de operación total.
 
 
 ---
