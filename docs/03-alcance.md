@@ -25,6 +25,7 @@ Para el desarrollo de la aplicación y su periodo de prueba necesitaríamos apro
 unos 3 meses, en los cuáles se incluiría el aprendizaje de las herramientas que
 consideramos necesarias para poder desarrollar nuestro proyecto y su correcto
 funcionamiento.
+
 ---
 
 [Ir a la siguiente sección](./04-)
