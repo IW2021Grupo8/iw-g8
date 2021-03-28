@@ -2,7 +2,7 @@
 
 ---
 
-[Volver al índice](../../README.md)
+[Volver al índice](../README.md)
 
 
 ---
@@ -20,4 +20,4 @@ En relación a todo lo descrito, nuestra empresa y su equipo, trabajará en el p
 
 ---
 
-[Ir a la siguiente sección](./02-problem.md)
+[Ir a la siguiente sección](02-problem.md)

@@ -20,8 +20,8 @@ Como componentes del equipo de prácticas están:
 
 La forma de trabajo seguida por el equipo se define como:
 
-* [Configuración del repositorio](./docs/workflow/01-repository.md)
-* [Flujo de trabajo con Github](./docs/workflow/02-workflow.md)
+* [Configuración del repositorio](workflow/01-repository.md)
+* [Flujo de trabajo con Github](workflow/02-workflow.md)
 
 ---
 
@@ -45,12 +45,12 @@ Elaboración de una memoria que recoja detalladamente el objetivo a alcanzar y l
 
 Esta memoria consta de los siguientes apartados:
 
-* [Introducción](./docs/p1/01-intro.md)
-* [Definición del problema](./docs/p1/02-problem.md)
-* [Alcance del sistema](./docs/p1/03-)
-* [Objetivos](./docs/p1/04-)
-* [Antecedentes](./docs/p1/05-)
-* [Recursos](./docs/p1/06-resources.md)
+* [Introducción](./p1/01-intro.md)
+* [Definición del problema](./p1/02-problem.md)
+* [Alcance del sistema](./p1/03-alcance.md)
+* [Objetivos](./p1/04-objetivos.md)
+* [Antecedentes](./p1/05-antecedentes.md)
+* [Recursos](./p1/06-resources.md)
 
 Puede consultar la versión PDF [aquí](./docs/files/p1grupo8.pdf)
 

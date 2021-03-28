@@ -2,7 +2,7 @@
 
 ---
 
-[Volver al índice](../../README.md)
+[Volver al índice](../README.md)
 
 ---
 
@@ -52,4 +52,4 @@ Los recursos o herramientas a emplear en el desarrollo son:
 
 ---
 
-[Volver al índice](../../README.md)
+[Volver al índice](../README.md)
