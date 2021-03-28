@@ -8,10 +8,10 @@ __Proyecto 3 - Puesta en contacto de empresarios con agricultores__
 
 # Instalación
 
-* [Configuración del repositorio](workflow/01-repository.md)
+* [Configuración del repositorio](01-repository.md)
 
 ---
 
 # Flujo de trabajo
 
-* [Flujo de trabajo con Github](workflow/02-workflow.md)
+* [Flujo de trabajo con Github](02-workflow.md)
