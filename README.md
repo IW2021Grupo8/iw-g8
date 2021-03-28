@@ -1,6 +1,6 @@
-# Proyecto 3 - Puesta en contacto de empresarios con agricultores
+# Puesta en contacto de empresarios con agricultores
 
-Este proyecto será desarrollado como parte práctica de la asignatura Ingeniería Web cursada en 2021 para el Grado de Ingeniería Informática de la Universidad de Córdoba.
+Este proyecto (proyecto 3) será desarrollado como parte práctica de la asignatura Ingeniería Web cursada en 2021 para el Grado de Ingeniería Informática de la Universidad de Córdoba.
 
 ---
 
