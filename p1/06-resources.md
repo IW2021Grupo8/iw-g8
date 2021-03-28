@@ -48,8 +48,3 @@ Los recursos o herramientas a emplear en el desarrollo son:
 * PHP para el desarrollo del API (concretamente se usará la última versión del framework Symfony).
 * HTML, CSS y JS para el desarrollo de la aplicación web responsive.
 * HTML y CSS para la maquetación de emails adaptativos.
-
-
----
-
-[Volver al índice](../README.md)
