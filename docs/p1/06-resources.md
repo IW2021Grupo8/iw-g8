@@ -32,6 +32,8 @@ Se distribuirán los roles de la siguiente forma:
 Para el desarrollo de este producto se hará uso de los equipos informáticos de cada uno de los integrantes del equipo.
 
 * Macbook Pro con un procesador de 2,6 GHz Intel Core i7 de 6 núcleos y memoria de arranque de 16 GB 2400 MHz DDR4.
+* Torre con Sistema Operativo Windows 10, con un procesador de 3,20 Ghz Intel Core i5 6500 de 4 núcleos y memoria de arranque de 16 GB a 2133 Mhz DDR4 y porta también una gráfica RX 480 de 4GB GDDR5.
+* Lenovo Thinkpad T440p con un procesador de 3.10GHz Intel Core i5 de 2 núcleos y memoria de arranque de 8 GB 1200MHz DDR4.
 
 ### Recursos software
 
