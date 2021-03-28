@@ -25,7 +25,3 @@ Para iniciar el trabajo con Git, hay que tener bien configurado nuestro entorno 
 > git config core.hooksPath .githooks
 
 Estos hooks impedirán que trabajemos directamente con la rama principal, ya que es más recomendable que cualquier modificación en el repositorio se haga mediante ramas y pull request.
-
----
-
-[Ir a la siguiente sección](02-workflow.md)

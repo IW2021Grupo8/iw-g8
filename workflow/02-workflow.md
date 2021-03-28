@@ -22,7 +22,3 @@ Para resolver cada tarea, se realizarán los siguientes pasos:
 Cada tarea estará relacionada con un proyecto de Github.
 
 Los proyectos proporcionan un panel kanban, así que iniciada una tarea, habrá que mover el estado de esta en ese tablero.
-
----
-
-[Volver al listado](workflow.md)
