@@ -1,9 +1,8 @@
-### Proyecto 3 - Puesta en contacto de empresarios con agricultores
+__Proyecto 3 - Puesta en contacto de empresarios con agricultores__
 
 ---
 
-[Volver al índice](../README.md)
-
+[Volver al listado](workflow.md)
 
 ---
 
@@ -24,7 +23,6 @@ Cada tarea estará relacionada con un proyecto de Github.
 
 Los proyectos proporcionan un panel kanban, así que iniciada una tarea, habrá que mover el estado de esta en ese tablero.
 
-
 ---
 
-[Volver al índice](../README.md)
+[Volver al listado](workflow.md)

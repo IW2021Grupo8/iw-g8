@@ -1,9 +1,8 @@
-### SCRUM
-### Proyecto 3 - Puesta en contacto de empresarios con agricultores
+__Proyecto 3 - Puesta en contacto de empresarios con agricultores__
 
 ---
 
-[Volver al índice](../README.md)
+[Volver al listado](scrum.md)
 
 ---
 
