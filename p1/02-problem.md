@@ -61,4 +61,4 @@ Información que es proporcionada por los usuarios, así que se debe poner espec
 
 ---
 
-[Ir a la siguiente sección](./03-)
+[Ir a la siguiente sección](03-alcance.md)

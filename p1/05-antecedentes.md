@@ -22,4 +22,4 @@ La web a la que hacemos referencia no cuenta con sistema de puntuación obtenida
 Aun así, un portal web enfocado a la agricultura, y más concretamente orientado a la oferta de trabajo, es algo novedoso de lo que a día de hoy no podemos encontrar grandes referencias, aunque como hemos comentado, si podemos encontrar información y trabajos realizados anteriormente que nos sirven de punto de partida.
 
 
-[Ir a la siguiente sección](./04-problem.md)
+[Ir a la siguiente sección](06-resources.md)
