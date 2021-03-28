@@ -18,6 +18,7 @@ agricultores puedan optar por el empleo más adecuado a lo que están
 acostumbrados y a su vez gracias a las funcionalidades de puntuación
 ofrecidas evitar problemas de baja productividad por parte del agricultor y
 precariedad por parte del empresario.
+
 ---
 
 [Ir a la siguiente sección](05-antecedentes.md)

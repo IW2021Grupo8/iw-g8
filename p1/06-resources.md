@@ -39,14 +39,14 @@ Para el desarrollo de este producto se hará uso de los equipos informáticos de
 
 Los recursos o herramientas a emplear en el desarrollo son:
 
+* Balsamiq: Herramienta para el diseño de wireframes o prototipos.
 * Figma: Herramienta online para el diseño de la interfaz.
 * Docker: Entorno de desarrollo.
-* PHPStorm: IDE para desarrollo de código (backend).
-* Visual Studio Code: IDE para desarrollo de código (frontend).
+* PHPStorm: IDE para desarrollo de código.
+* Sublime: IDE para desarrollo de código.
 * MySQL para la estructura y almacenamiento de la información.
 * PHP para el desarrollo del API (concretamente se usará la última versión del framework Symfony).
-* PHP para el desarrollo script o cron.
-* HTML, CSS y React JS para el desarrollo de la aplicación web responsive.
+* HTML, CSS y JS para el desarrollo de la aplicación web responsive.
 * HTML y CSS para la maquetación de emails adaptativos.
 
 
