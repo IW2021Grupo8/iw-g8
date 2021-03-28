@@ -28,4 +28,4 @@ funcionamiento.
 
 ---
 
-[Ir a la siguiente sección](./04-)
+[Ir a la siguiente sección](04-objetivos.md)

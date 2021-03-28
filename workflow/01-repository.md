@@ -13,7 +13,7 @@ Para iniciar el trabajo con Git, hay que tener bien configurado nuestro entorno 
 
 1. Descarga
 
-> git clone git@github.com:IW2021Grupo8/iw.git
+> git clone https://github.com/IW2021Grupo8/iw-g8.git
 
 2. Configuración de tu usuario
 
@@ -25,8 +25,8 @@ Para iniciar el trabajo con Git, hay que tener bien configurado nuestro entorno 
 
 > git config core.hooksPath .githooks
 
-Estos hooks impediran que trabajemos directamente con la rama principal, ya que es más recomendable que cualquiermodificación en el repositorio se haga mediante ramas y pull request.
+Estos hooks impedirán que trabajemos directamente con la rama principal, ya que es más recomendable que cualquier modificación en el repositorio se haga mediante ramas y pull request.
 
 ---
 
-[Ir a la siguiente sección](./02-workflow.md)
+[Ir a la siguiente sección](02-workflow.md)
