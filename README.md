@@ -45,14 +45,14 @@ Elaboración de una memoria que recoja detalladamente el objetivo a alcanzar y l
 
 Esta memoria consta de los siguientes apartados:
 
-* [Introducción](./p1/01-intro.md)
-* [Definición del problema](./p1/02-problem.md)
-* [Alcance del sistema](./p1/03-alcance.md)
-* [Objetivos](./p1/04-objetivos.md)
-* [Antecedentes](./p1/05-antecedentes.md)
-* [Recursos](./p1/06-resources.md)
+* [Introducción](p1/01-intro.md)
+* [Definición del problema](p1/02-problem.md)
+* [Alcance del sistema](p1/03-alcance.md)
+* [Objetivos](p1/04-objetivos.md)
+* [Antecedentes](p1/05-antecedentes.md)
+* [Recursos](p1/06-resources.md)
 
-Puede consultar la versión PDF [aquí](./docs/files/p1grupo8.pdf)
+Puede consultar la versión PDF [aquí](p1/p1-grupo8.pdf)
 
 ---
 
