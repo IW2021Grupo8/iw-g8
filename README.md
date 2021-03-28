@@ -1,10 +1,10 @@
-### Proyecto 3
+# Proyecto 3 - Puesta en contacto de empresarios con agricultores
+
+Este proyecto será desarrollado como parte práctica de la asignatura Ingeniería Web cursada en 2021 para el Grado de Ingeniería Informática de la Universidad de Córdoba.
 
 ---
 
-# Puesta en contacto de empresarios con agricultores
-
-Este proyecto será desarrollado como parte práctica de la asignatura Ingeniería Web cursada en 2021 para el Grado de Ingeniería Informática de la Universidad de Córdoba.
+## Equipo
 
 Como componentes del equipo de prácticas están:
 
@@ -16,46 +16,21 @@ Como componentes del equipo de prácticas están:
 
 ---
 
-### Configuración del entorno
+## Prácticas
 
-La forma de trabajo seguida por el equipo se define como:
+El trabajo de la asignatura se ha desglosado en los siguientes bloques:
 
-* [Configuración del repositorio](workflow/01-repository.md)
-* [Flujo de trabajo con Github](workflow/02-workflow.md)
-
----
-
-### Reuniones de seguimiento de equipo
-
-Pese a tener mucho contacto por chat (whassap/discord) para la realización de las tareas, también se han realizado las siguientes reuniones de equipo:
-
-* [2021-03-04 Selección de tema](./meeting/2021-03-04.md)
-* [2021-03-10 Preparación de la primera reunión con cliente](./meeting/2021-03-04.md)
-* [2021-03-11 Clase de prácticas - Reunión con cliente](./meeting/2021-03-04.md)
-* [2021-03-17 Revisión de la primera práctica](./meeting/2021-03-17.md)
-* [2021-03-18 Clase de prácticas - Inicio de la segunda práctica](./meeting/2021-03-18-review.md)
-* [2021-03-24 Revisión de la primera práctica y del listado de requisitos](./meeting/2021-03-17.md)
-* [2021-03-25 Clase de prácticas - Revisión de requisitos](./meeting/2021-03-25-review.md)
+* [Práctica 1 - Memoria de prácticas](p1/p1.md)
+* [Práctica 2 - Especificación de requisitos](p2/p2.md)
 
 ---
 
-## Práctica 1
+## Reuniones de seguimiento de equipo
 
-Elaboración de una memoria que recoja detalladamente el objetivo a alcanzar y las características que cumplirá el proyecto.
-
-Esta memoria consta de los siguientes apartados:
-
-* [Introducción](p1/01-intro.md)
-* [Definición del problema](p1/02-problem.md)
-* [Alcance del sistema](p1/03-alcance.md)
-* [Objetivos](p1/04-objetivos.md)
-* [Antecedentes](p1/05-antecedentes.md)
-* [Recursos](p1/06-resources.md)
-
-Puede consultar la versión PDF [aquí](p1/p1-grupo8.pdf)
+Pese a tener mucho contacto por chat (whassap/discord) para la realización de las tareas, también se han realizado las reuniones de equipo que se pueden consultar [aquí](meeting/meeting.md).
 
 ---
 
-## Práctica 2
+## Entorno y flujo de trabajo
 
-Ampliación de la memoria con la recopilación de requisitos.
+La forma de trabajo seguida por el equipo se define en los siguientes [puntos](workflow/workflow.md).
