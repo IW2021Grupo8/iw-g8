@@ -1,12 +1,12 @@
-### Proyecto 3 - Puesta en contacto de empresarios con agricultores
+__Proyecto 3 - Puesta en contacto de empresarios con agricultores__
 
 ---
 
-[Volver a requisitos](./02-requirement.md)
+[Volver al listado](p2.md)
 
 ---
 
-## Requisitos no funcionales
+# Requisitos no funcionales
 
 ## Requisitos de eficiencia
 
@@ -39,8 +39,3 @@ __RNF-009__ El sistema debe poseer interfaces gráficas bien formadas.
 __RNF-010__ El sistema debe tener una disponibilidad del 99,99% de las veces en que un usuario intente acceder.
 
 __RNF-011__ La tasa de tiempos de falla del sistema no podrá ser mayor al 0,5% del tiempo de operación total.
-
-
----
-
-[Volver a requisitos](./02-requirement.md)
