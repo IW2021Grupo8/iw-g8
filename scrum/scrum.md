@@ -10,4 +10,6 @@ __Proyecto 3 - Puesta en contacto de empresarios con agricultores__
 
 El trabajo de este producto se ha distribuido en los siguientes sprints:
 
-* [Sprint 1](01-sprint1.md)
+* [Sprint 1](sprint1.md)
+* [Sprint 2](sprint2.md)
+* [Sprint 3](sprint3.md)
