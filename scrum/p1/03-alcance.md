@@ -2,7 +2,7 @@ __Proyecto 3 - Puesta en contacto de empresarios con agricultores__
 
 ---
 
-[Volver al índice](../README.md)
+[Volver al índice](../../README.md)
 
 
 ---
