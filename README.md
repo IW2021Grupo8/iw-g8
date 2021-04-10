@@ -1,10 +1,10 @@
-# Puesta en contacto de empresarios con agricultores
-
-Este proyecto (proyecto 3) será desarrollado como parte práctica de la asignatura Ingeniería Web cursada en 2021 para el Grado de Ingeniería Informática de la Universidad de Córdoba.
+### Proyecto 3
 
 ---
 
-## Equipo
+# Puesta en contacto de empresarios con agricultores
+
+Este proyecto será desarrollado como parte práctica de la asignatura Ingeniería Web cursada en 2021 para el Grado de Ingeniería Informática de la Universidad de Córdoba.
 
 Como componentes del equipo de prácticas están:
 
@@ -16,23 +16,44 @@ Como componentes del equipo de prácticas están:
 
 ---
 
-## Prácticas
+### Configuración del entorno
 
-El trabajo de la asignatura se ha desglosado en los siguientes bloques:
+La forma de trabajo seguida por el equipo se define como:
 
-* [Práctica 1 - Memoria de prácticas](scrum/p1/p1.md)
-* [Práctica 2 - Especificación de requisitos](scrum/p2/p2.md)
-
-Se ha seguido la metodología SCRUM, concretamente [esta planificación](scrum/planning/scrum.md).
+* [Configuración del repositorio](./docs/workflow/01-repository.md)
+* [Flujo de trabajo con Github](./docs/workflow/02-workflow.md)
 
 ---
 
-## Reuniones de seguimiento de equipo
+### Reuniones de seguimiento de equipo
 
-Pese a tener mucho contacto por chat (whassap/discord) para la realización de las tareas, también se han realizado las reuniones de equipo que se pueden consultar [aquí](scrum/meeting/meeting.md).
+Pese a tener mucho contacto por chat (whassap/discord) para la realización de las tareas, también se han realizado las siguientes reuniones de equipo:
+
+* [2021-03-04 Selección de tema](./meeting/2021-03-04.md)
+* [2021-03-10 Preparación de la primera reunión con cliente](./meeting/2021-03-04.md)
+* [2021-03-11 Clase de prácticas - Reunión con cliente](./meeting/2021-03-04.md)
+* [2021-03-17 Revisión de la primera práctica](./meeting/2021-03-17.md)
+* [2021-03-18 Clase de prácticas - Inicio de la segunda práctica](./meeting/2021-03-18-review.md)
+* [2021-03-24 Revisión de la primera práctica y del listado de requisitos](./meeting/2021-03-17.md)
+* [2021-03-25 Clase de prácticas - Revisión de requisitos](./meeting/2021-03-25-review.md)
 
 ---
 
-## Entorno y flujo de trabajo
+## Práctica 1
 
-La forma de trabajo seguida por el equipo se define en los siguientes [puntos](workflow/workflow.md).
+Elaboración de una memoria que recoja detalladamente el objetivo a alcanzar y las características que cumplirá el proyecto.
+
+Esta memoria consta de los siguientes apartados:
+
+* [Introducción](./docs/01-intro.md)
+* [Definición del problema](./docs/02-)
+* [Alcance del sistema](./docs/03-alcance.md)
+* [Objetivos](./docs/04-)
+* [Antecedentes](./docs/05-)
+* [Recursos](./docs/06-)
+
+---
+
+## Práctica 2
+
+Ampliación de la memoria con la recopilación de requisitos
