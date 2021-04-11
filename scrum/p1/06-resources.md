@@ -22,10 +22,10 @@ Se distribuirán los roles de la siguiente forma:
 | ROLE  | EQUIPO |
 |---|---|
 | Scrum master  | Cristina Quintana Cano |
-| Backend  |   |
-| Frontend |   |
-| QA  |   |
-| UX/UI  |   |
+| Backend  | Cristina Quintana Cano / David Barbero Jurado / Antonio Haro Sánchez |
+| Frontend | David Barbero Jurado/ Daniel Ortega León / Alberto Ortiz Arribas |
+| QA  | Alberto Ortiz Arribas / Antonio Haro Sánchez |
+| UX/UI  | Cristina Quintana Cano / Alberto Ortiz Arribas |
 
 ### Recursos hardware
 
