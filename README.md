@@ -29,7 +29,7 @@ Se ha seguido la metodología SCRUM, concretamente [esta planificación](scrum/p
 
 ## Reuniones de seguimiento de equipo
 
-Pese a tener mucho contacto por chat (whassap/discord) para la realización de las tareas, también se han realizado las reuniones de equipo que se pueden consultar [aquí](scrum/meeting/meeting.md).
+Pese a tener mucho contacto por chat (whassap/discord) para la ejecución de las tareas, también se han realizado reuniones de equipo que se pueden consultar [aquí](scrum/meeting/meeting.md).
 
 ---
 
