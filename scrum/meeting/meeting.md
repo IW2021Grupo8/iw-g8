@@ -24,3 +24,4 @@ __Proyecto 3 - Puesta en contacto de empresarios con agricultores__
 * [2021-04-07 Revisión de la segunda práctica - Revisión de diagramas de actividad](2021-04-07.md)
 * [2021-04-08 Clase de prácticas - Revisión y dudas](2021-04-08-review.md)
 * [2021-04-14 Preparación de la presentación](2021-04-14.md)
+* [2021-04-15 Clase de prácticas - Defensa 1](2021-04-15-review.md)
