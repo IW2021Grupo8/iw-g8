@@ -22,6 +22,7 @@ El trabajo de la asignatura se ha desglosado en los siguientes bloques:
 
 * [Práctica 1 - Memoria de prácticas](scrum/p1/p1.md)
 * [Práctica 2 - Especificación de requisitos](scrum/p2/p2.md)
+* [Práctica 3 - Modelado](scrum/p3/p3.md)
 
 Se ha seguido la metodología SCRUM, concretamente [esta planificación](scrum/planning/scrum.md).
 
