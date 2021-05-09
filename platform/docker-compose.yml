@@ -1,0 +1,41 @@
+version: '3.5'
+
+services:
+  app:
+    build: .
+    volumes:
+      - ./sandbox/:/app
+    working_dir: /app
+
+  webserver:
+    image: nginx:latest
+    ports:
+      - 8091:80
+    volumes:
+      - ./etc/infrastructure/nginx/conf.d/:/etc/nginx/conf.d/
+
+  mysql:
+    image: mysql:5.5.43
+    ports:
+      - 3396:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_USER: 'sandbox'
+      MYSQL_PASSWORD: 'sandbox'
+      MYSQL_DATABASE: 'sandbox'
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - 8092:80
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+      PMA_HOST: mysql
+    depends_on:
+      - mysql
+
+volumes:
+  mysql-data:
