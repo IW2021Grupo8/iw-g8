@@ -10,32 +10,30 @@ services:
   webserver:
     image: nginx:latest
     ports:
-      - 8091:80
+      - 8001:80
     volumes:
       - ./etc/infrastructure/nginx/conf.d/:/etc/nginx/conf.d/
 
-  mysql:
+  db:
     image: mysql:5.5.43
     ports:
-      - 3396:3306
+      - 3306:3306
     environment:
-      MYSQL_ROOT_PASSWORD: 'root'
-      MYSQL_USER: 'sandbox'
-      MYSQL_PASSWORD: 'sandbox'
-      MYSQL_DATABASE: 'sandbox'
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=sandbox
     volumes:
-      - mysql-data:/var/lib/mysql
+      - db-data:/var/lib/mysql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     restart: always
     ports:
-      - 8092:80
+      - 8002:80
     environment:
       MYSQL_ROOT_PASSWORD: 'root'
-      PMA_HOST: mysql
+      PMA_HOST: db
     depends_on:
-      - mysql
+      - db
 
 volumes:
-  mysql-data:
+  db-data:
