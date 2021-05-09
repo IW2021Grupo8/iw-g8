@@ -54,6 +54,8 @@ class CreateUserCommand extends Command
         }
 
         $user = new User();
+        $user->setFirstName($email);
+        $user->setLastName($email);
         $user->setEmail($email);
         $password = $this->userPasswordEncoder->encodePassword($user, $plainPassword);
         $user->setPassword($password);
