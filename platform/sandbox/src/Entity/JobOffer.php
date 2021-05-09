@@ -10,7 +10,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass=JobOfferRepository::class)
- * @UniqueEntity(fields={"code", "company_id"}, message="There is already a job offer with this code")
+ * @UniqueEntity(fields={"code", "company_id"}, message="There is already a job offer with this code and this company")
  */
 class JobOffer
 {
@@ -55,6 +55,11 @@ class JobOffer
      * @ORM\Column(type="integer", nullable=false, options={"default":0})
      */
     private $vacancies = 0;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=false, options={"default":false})
+     */
+    private $deleted = false;
 
     /**
      * @var Company $company
@@ -161,6 +166,16 @@ class JobOffer
     public function setVacancies(int $vacancies): void
     {
         $this->vacancies = $vacancies;
+    }
+
+    public function getDeleted(): bool
+    {
+        return $this->deleted;
+    }
+
+    public function setDeleted($deleted): void
+    {
+        $this->deleted = $deleted;
     }
 
     /**
