@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -21,9 +23,24 @@ class User implements UserInterface
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=180, unique=true)
+     * @ORM\Column(type="string", length=180, nullable=false, unique=true)
      */
     private $email;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=false)
+     */
+    private $firstName;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=false)
+     */
+    private $lastName;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=false, options={"default":false})
+     */
+    private $deleted = false;
 
     /**
      * @ORM\Column(type="json")
@@ -36,12 +53,42 @@ class User implements UserInterface
      */
     private $password;
 
+    /**
+     * @var Company|null $company
+     *
+     * @ORM\ManyToOne(targetEntity="Company")
+     * @ORM\JoinColumn(name="company_id", referencedColumnName="id", nullable=true)
+     */
+    private $company;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Crop")
+     */
+    private $crops;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Machinery")
+     */
+    private $machineries;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Gang")
+     */
+    private $gangs;
+
+    public function __construct()
+    {
+        $this->crops = new ArrayCollection();
+        $this->machineries = new ArrayCollection();
+        $this->gangs = new ArrayCollection();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getEmail(): ?string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -115,5 +162,96 @@ class User implements UserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    public function getFirstName(): string
+    {
+        return $this->firstName;
+    }
+
+    public function setFirstName($firstName): void
+    {
+        $this->firstName = $firstName;
+    }
+
+    public function getLastName(): string
+    {
+        return $this->lastName;
+    }
+
+    public function setLastName($lastName): void
+    {
+        $this->lastName = $lastName;
+    }
+
+    public function getDeleted(): bool
+    {
+        return $this->deleted;
+    }
+
+    public function setDeleted($deleted): void
+    {
+        $this->deleted = $deleted;
+    }
+
+    public function getCompany(): ?Company
+    {
+        return $this->company;
+    }
+
+    public function setCompany(?Company $company): void
+    {
+        $this->company = $company;
+    }
+
+    public function addCrop(Crop $crop): self
+    {
+        $this->crops[] = $crop;
+
+        return $this;
+    }
+
+    public function removeCrop(Crop $crop): bool
+    {
+        return $this->crops->removeElement($crop);
+    }
+
+    public function getCrops(): Collection
+    {
+        return $this->crops;
+    }
+
+    public function addMachinary(Machinery $machinery): self
+    {
+        $this->machineries[] = $machinery;
+
+        return $this;
+    }
+
+    public function removeMachinary(Machinery $machinery): bool
+    {
+        return $this->machineries->removeElement($machinery);
+    }
+
+    public function getMachineries(): Collection
+    {
+        return $this->machineries;
+    }
+
+    public function addGang(Gang $gang): self
+    {
+        $this->gangs[] = $gang;
+
+        return $this;
+    }
+
+    public function removeGang(Gang $gang): bool
+    {
+        return $this->gangs->removeElement($gang);
+    }
+
+    public function getGangs(): Collection
+    {
+        return $this->gangs;
     }
 }
