@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% set current = 'search' %}
+
+{% block menu %}
+    {% include 'candidate/menu.html.twig' %}
+{% endblock menu %}
+
+{% block body %}
+    <div class="page-header" style="background-color: #777;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-wrapper">
+                        <h2 class="product-title">Busca un chachi trabajo</h2>
+                        <ol class="breadcrumb">
+                            <li><a href="{{ path('app_candidate_dashboard') }}">Inicio</a></li>
+                            <li><a href="{{ path('app_candidate_search_jobs') }}">Búsqueda de trabajos</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content" class="my-account">
+        <div class="container">
+            <div class="row">
+                {% if jobs is empty %}
+                    <div class="alert alert-info alert-dismissable">
+                        No hay elementos disponibles.
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock body %}

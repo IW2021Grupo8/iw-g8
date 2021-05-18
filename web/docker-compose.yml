@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+    db:
+        image: mysql:5.5.43
+        ports:
+            - 3306:3306
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_DATABASE=sandbox
+        volumes:
+            - db-data:/var/lib/mysql
+    php:
+        build:
+            context: .
+            dockerfile: docker/php/Dockerfile
+            args:
+                TIMEZONE: 'Europe/Madrid'
+        volumes:
+            - ./symfony/:/var/www/symfony/
+            - symfony
+    nginx:
+        build:
+            context: .
+            dockerfile: docker/nginx/Dockerfile
+        volumes:
+            - ./symfony/:/var/www/symfony/
+        ports:
+            - 8001:80
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - 8002:80
+        environment:
+            MYSQL_ROOT_PASSWORD: 'root'
+            PMA_HOST: db
+        depends_on:
+            - db
+
+volumes:
+    db-data:
