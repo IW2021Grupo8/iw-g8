@@ -1,0 +1,50 @@
+<nav class="navbar navbar-default main-navigation affix-top" role="navigation" data-spy="affix"
+     data-offset-top="50">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="{{ path('app_landing') }}" style="font-size: 3em; padding-top: 0.5em;">
+                <strong>FarmJob</strong>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right float-right">
+                <li class="left">
+                    <a href="{{ path('app_logout') }}">Salir</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="drop">
+                    <a class="{% if current == 'search' %}active{% endif %}"  href="{{ path('app_candidate_search_jobs') }}">
+                        Buscar empleo
+                    </a>
+                </li>
+                <li class="drop">
+                    <a class="{% if current == 'jobs' %}active{% endif %}"  href="{{ path('app_candidate_jobs') }}">
+                        Mis solicitudes
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <ul class="wpb-mobile-menu">
+        <li>
+            <a href="{{ path('app_candidate_search_jobs') }}">
+                Buscar empleo
+            </a>
+        </li>
+        <li class="drop">
+            <a href="{{ path('app_candidate_jobs') }}">
+                Mis solicitudes
+            </a>
+        </li>
+        <li class="btn-m">
+            <a href="{{ path('app_logout') }}">logout</a>
+        </li>
+    </ul>
+</nav>

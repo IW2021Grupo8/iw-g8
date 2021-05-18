@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}FarmJob - Portal de empleo{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('build/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('build/jasny-bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('build/bootstrap-select.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('build/material-kit.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/build/font-awesome.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/build/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('/build/color-switcher.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/build/animate.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/build/owl.carousel.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/build/owl.theme.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/build/settings.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/build/slicknav.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/build/main.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/build/responsive.css') }}" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/build/red.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ asset('/build/color-switcher.css') }}" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-menu">
+            {% block menu %}
+                {% include 'landing/menu.html.twig' %}
+            {% endblock menu %}
+        </div>
+    </div>
+    {% block body %}
+        <section id="slider">
+            <div class="tp-banner-container" style="overflow: visible;">
+                <div class="tp-banner revslider-initialised tp-simpleresponsive" id="revslider-793"
+                     style="max-height: 540px; height: 540px;">
+                    <ul class="tp-revslider-mainul"
+                        style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
+                        <li data-transition="fade" data-slotamount="7" data-masterspeed="2000"
+                            data-thumb="{{ asset('/build/img/slider/slide1.jpg') }}"
+                            class="tp-revslider-slidesli active-revslide"
+                            style="width: 100%; height: 100%; overflow: hidden; z-index: 18; visibility: hidden; opacity: 0;">
+
+                            <div class="slotholder" style="width:100%;height:100%;" data-duration="undefined"
+                                 data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined"
+                                 data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined"
+                                 data-bgposition="undefined" data-kenburns="undefined" data-easeme="undefined"
+                                 data-bgfit="undefined" data-bgfitend="undefined" data-owidth="undefined"
+                                 data-oheight="undefined">
+                                <div class="tp-bgimg defaultimg" data-lazyload="{{ asset('/build/img/slider/slide1.jpg') }}"
+                                     data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"
+                                     data-lazydone="undefined" src="{{ asset('/build/img/slider/slide1.jpg') }}'"
+                                     data-src="{{ asset('/build/img/dummy.png') }}"
+                                     style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;assets/img/slider/slide1.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0; visibility: hidden;"></div>
+                            </div>
+
+                            <div class="tp-caption mediumHeading h2 lft tp-resizeme rs-parallaxlevel-0 start"
+                                 data-x="center" data-y="center" data-voffset="-50" data-speed="1200" data-start="1000"
+                                 data-easing="Back.easeInOut" data-splitin="none" data-splitout="none"
+                                 data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="400"
+                                 style="z-index: 11; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 37px; border-width: 0px; margin: 20px 0px 10px; padding: 0px; letter-spacing: 0px; font-size: 33px; left: 544px; top: 180px; visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, -105, 0, 1);">
+                                <h2 style="min-height: 0px; min-width: 0px; line-height: 30px; border-width: 0px; margin: 0px 0px 20px; padding: 0px; letter-spacing: 2px; font-weight: 900; font-size: 52px; color: rgb(255, 255, 255); text-transform: uppercase; transition: all 0s ease 0s;">
+                                    Looking For A Job?</h2>
+                            </div>
+
+                            <div class="tp-caption detailText p lfl tp-resizeme start" data-x="center" data-y="center"
+                                 data-voffset="10" data-speed="1200" data-start="1500" data-easing="easeInOutExpo"
+                                 data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
+                                 data-endspeed="300"
+                                 style="text-align: center; z-index: 8; color: rgb(255, 255, 255); transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 13px; left: 655px; top: 256px; visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, -385, 0, 0, 1);">
+                                <p style="font-size: 15px; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    <br style="font-size: 12px; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px;">consectetur
+                                    adipisicing elit.</p>
+                            </div>
+
+                            <div class="tp-caption lfb tp-resizeme rs-parallaxlevel-0 start" data-x="center" data-y="center"
+                                 data-voffset="90" data-speed="1200" data-start="2000" data-easing="easeInOutExpo"
+                                 data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
+                                 data-endspeed="300"
+                                 style="z-index: 11; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 13px; left: 755px; top: 333px; visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, 565, 0, 1);">
+                                <a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#"
+                                   class="btn btn-common btn-lg"
+                                   style="transition: all 0.2s ease-out 0s; min-height: 0px; min-width: 0px; line-height: 18px; border-width: 0px; margin: 0px; padding: 18px 36px; letter-spacing: 0px; font-size: 14px;">Search
+                                    Now</a>
+                            </div>
+                        </li>
+                        <li data-transition="slideup" data-slotamount="7" data-masterspeed="800"
+                            data-thumb="{{ asset('/build/img/slider/slide2.jpg') }}"
+                            class="tp-revslider-slidesli active-revslide current-sr-slide-visible"
+                            style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1;">
+
+                            <div class="slotholder" style="width:100%;height:100%;" data-duration="undefined"
+                                 data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined"
+                                 data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined"
+                                 data-bgposition="undefined" data-kenburns="undefined" data-easeme="undefined"
+                                 data-bgfit="undefined" data-bgfitend="undefined" data-owidth="undefined"
+                                 data-oheight="undefined">
+                                <div class="tp-bgimg defaultimg" data-lazyload="{{ asset('/build/img/slider/slide2.jpg') }}"
+                                     data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"
+                                     data-lazydone="undefined" src="{{ asset('/build/img/slider/slide2.jpg') }}"
+                                     data-src="{{ asset('/build/img/dummy.png') }}'"
+                                     style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;assets/img/slider/slide2.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit;"></div>
+                            </div>
+
+                            <div class="caption title sfb tp-caption start" data-x="center" data-y="center"
+                                 data-voffset="-50" data-speed="400" data-start="800" data-easing="easeOutExpo"
+                                 style="transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 13px; left: 527.5px; top: 163px; visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
+                                <h2 style="min-height: 0px; min-width: 0px; line-height: 94px; border-width: 0px; margin: 0px 0px 20px; padding: 0px; letter-spacing: 2px; font-size: 52px; font-weight: 900; color: #fff; text-transform: uppercase;">
+                                    12000+ Jobs Waiting</h2>
+                            </div>
+
+                            <div class="caption text p sfb tp-caption start" data-x="center" data-y="center"
+                                 data-voffset="10" data-speed="400" data-start="1200" data-easing="easeOutExpo"
+                                 style="z-index: 8; color: rgb(255, 255, 255); text-align: center; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 13px; left: 655px; top: 256px; visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
+                                <p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    <br style="font-size: 12px;">consectetur adipisicing elit.</p>
+                            </div>
+
+                            <div class="caption sfb tp-caption start" data-x="center" data-y="center" data-voffset="90"
+                                 data-speed="400" data-start="1600" data-easing="easeOutExpo"
+                                 style="transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 13px; left: 754px; top: 332px; visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
+                                <a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#"
+                                   class="btn btn-border btn-lg">Get Started</a>
+                            </div>
+                        </li>
+                        <li data-transition="zoomin" data-slotamount="7" data-masterspeed="1500"
+                            data-thumb="{{ asset('/build/img/slider/slide3.jpg') }}"
+                            class="tp-revslider-slidesli active-revslide"
+                            style="width: 100%; height: 100%; overflow: hidden; visibility: hidden; opacity: 0; z-index: 18;">
+
+                            <div class="slotholder" style="width:100%;height:100%;" data-duration="undefined"
+                                 data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined"
+                                 data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined"
+                                 data-bgposition="undefined" data-kenburns="undefined" data-easeme="undefined"
+                                 data-bgfit="undefined" data-bgfitend="undefined" data-owidth="undefined"
+                                 data-oheight="undefined">
+                                <div class="tp-bgimg defaultimg"
+                                     data-lazyload="{{ asset('/build/img/slider/slide3.jpg') }}'" data-bgfit="cover"
+                                     data-bgposition="center center" data-bgrepeat="no-repeat" data-lazydone="undefined"
+                                     src="{{ asset('/build/img/slider/slide3.jpg') }}"
+                                     data-src="{{ asset('/build/img/dummy.png') }}"
+                                     style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;assets/img/slider/slide3.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit;"></div>
+                            </div>
+
+                            <div class="tp-caption mediumHeading h2 lfl tp-resizeme rs-parallaxlevel-0 start" data-x="35"
+                                 data-y="center" data-voffset="-50"
+                                 data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                 data-customout="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                                 data-speed="1200" data-start="1550" data-easing="Back.easeInOut" data-splitin="none"
+                                 data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="400"
+                                 data-endeasing="Back.easeIn"
+                                 style="z-index: 11; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 37px; border-width: 0px; margin: 20px 0px 10px; padding: 0px; letter-spacing: 0px; font-size: 33px; left: 290px; top: 148px; visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, -764, 0, 0, 1);">
+                                <h2 style="min-height: 0px; min-width: 0px; line-height: 94px; border-width: 0px; margin: 0px 0px 20px; padding: 0px; letter-spacing: 2px; font-size: 52px; font-weight: 900; color: rgb(255, 255, 255); text-transform: uppercase; transition: all 0s ease 0s;">
+                                    Internship Opprtunity?</h2>
+                            </div>
+
+                            <div class="tp-caption detailText p lfl tp-resizeme start" data-x="35" data-y="center"
+                                 data-voffset="10" data-speed="1200" data-start="2100" data-easing="easeInOutExpo"
+                                 data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
+                                 data-endspeed="300"
+                                 style="z-index: 8; color: rgb(255, 255, 255); transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 13px; left: 290px; top: 256px; visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, -385, 0, 0, 1);">
+                                <p style="font-size: 15px; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    <br style="font-size: 12px; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px;">consectetur
+                                    adipisicing elit.</p>
+                            </div>
+
+                            <div class="tp-caption lfb tp-resizeme rs-parallaxlevel-0 start" data-x="35" data-y="center"
+                                 data-voffset="90" data-speed="1200" data-start="2700" data-easing="easeInOutExpo"
+                                 data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
+                                 data-endspeed="300"
+                                 style="z-index: 11; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 13px; left: 290px; top: 332px; visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, 565, 0, 1);">
+                                <a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#"
+                                   class="btn btn-common btn-lg"
+                                   style="transition: all 0.2s ease-out 0s; min-height: 0px; min-width: 0px; line-height: 18px; border-width: 0px; margin: 0px; padding: 18px 36px; letter-spacing: 0px; font-size: 14px;">Explore</a>
+                                <a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#"
+                                   class="btn btn-border btn-lg"
+                                   style="transition: all 0.2s ease-out 0s; min-height: 0px; min-width: 0px; line-height: 18px; border-width: 1px; margin: 0px; padding: 18px 36px; letter-spacing: 0px; font-size: 14px;">Build
+                                    Resume</a>
+                            </div>
+
+                            <div class="tp-caption lfb start" data-y="50" data-x="750"
+                                 style="z-index: 9; left: 1005px; top: 50px; visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00166, 0, 565, 0, 1);"
+                                 data-captionhidden="on" data-endeasing="Power4.easeIn" data-endspeed="1000"
+                                 data-start="1200" data-speed="800"
+                                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;">
+                                <img src="{{ asset('/build/3dlayer_3.png') }}" alt=""
+                                     data-lazyload="{{ asset('/build/img/slider/3dlayer_3.png') }}"
+                                     style="width: 382px; height: 552px;">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tp-loader spinner1" style="display: none;">
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
+                    <div class="tp-bannertimer"
+                         style="visibility: visible; width: 8.88889%; transform: translate3d(0px, 0px, 0px);"></div>
+                </div>
+                <div class="tp-bullets simplebullets preview3 hidebullets"
+                     style="bottom: 20px; left: 50%; margin-left: -59px;">
+                    <div class="bullet first"></div>
+                    <div class="bullet selected"></div>
+                    <div class="bullet last"></div>
+                    <div class="tpclear"></div>
+                </div>
+                <div style="position: absolute; top: 270px; margin-top: -34px; left: 0px;"
+                     class="tp-leftarrow tparrows default preview3 hidearrows">
+                    <div class="tp-arr-allwrapper">
+                        <div class="tp-arr-iwrapper">
+                            <div class="tp-arr-imgholder"
+                                 style="visibility: inherit; opacity: 1; background-image: url(&quot;assets/img/slider/slide1.jpg&quot;);"></div>
+                            <div class="tp-arr-imgholder2"></div>
+                            <div class="tp-arr-titleholder"></div>
+                            <div class="tp-arr-subtitleholder"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="position: absolute; top: 270px; margin-top: -34px; right: 0px;"
+                     class="tp-rightarrow tparrows default preview3 hidearrows">
+                    <div class="tp-arr-allwrapper">
+                        <div class="tp-arr-iwrapper">
+                            <div class="tp-arr-imgholder"
+                                 style="visibility: inherit; opacity: 1; background-image: url(&quot;assets/img/slider/slide3.jpg&quot;);"></div>
+                            <div class="tp-arr-imgholder2"></div>
+                            <div class="tp-arr-titleholder"></div>
+                            <div class="tp-arr-subtitleholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="find-job section">
+            <div class="container">
+                <h2 class="section-title">Hot Jobs</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="job-list">
+                            <div class="thumb">
+                                <a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html"><img
+                                            src="{{ asset('/build/img-1.jpg') }}" alt=""></a>
+                            </div>
+                            <div class="job-list-content">
+                                <h4><a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html">Need a web
+                                        designer</a><span class="full-time">Full-Time</span></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat aut veniam
+                                    molestiae atque dolorum omnis temporibus consequuntur saepe. Nemo atque consectetur
+                                    saepe corporis odit in dicta reprehenderit, officiis, praesentium?</p>
+                                <div class="job-tag">
+                                    <div class="pull-left">
+                                        <div class="meta-tag">
+                                            <span><a href="https://demo.graygrids.com/themes/jobboard-demo/browse-categories.html"><i
+                                                            class="ti-brush"></i>Art/Design</a></span>
+                                            <span><i class="ti-location-pin"></i>Washington, USA</span>
+                                            <span><i class="ti-time"></i>60/Hour</span>
+                                        </div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <div class="icon">
+                                            <i class="ti-heart"></i>
+                                        </div>
+                                        <a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html"
+                                           class="btn btn-common btn-rm">Apply Job</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-list">
+                            <div class="thumb">
+                                <a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html"><img
+                                            src="{{ asset('/build/img-2.jpg') }}" alt=""></a>
+                            </div>
+                            <div class="job-list-content">
+                                <h4><a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html">Front-end
+                                        developer needed</a><span class="full-time">Full-Time</span></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat aut veniam
+                                    molestiae atque dolorum omnis temporibus consequuntur saepe. Nemo atque consectetur
+                                    saepe corporis odit in dicta reprehenderit, officiis, praesentium?</p>
+                                <div class="job-tag">
+                                    <div class="pull-left">
+                                        <div class="meta-tag">
+                                            <span><a href="https://demo.graygrids.com/themes/jobboard-demo/browse-categories.html"><i
+                                                            class="ti-desktop"></i>Technologies</a></span>
+                                            <span><i class="ti-location-pin"></i>Cupertino, CA, USA</span>
+                                            <span><i class="ti-time"></i>60/Hour</span>
+                                        </div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <div class="icon">
+                                            <i class="ti-heart"></i>
+                                        </div>
+                                        <a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html"
+                                           class="btn btn-common btn-rm">Apply Job</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-list">
+                            <div class="thumb">
+                                <a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html"><img
+                                            src="{{ asset('/build/img-3.jpg') }}" alt=""></a>
+                            </div>
+                            <div class="job-list-content">
+                                <h4><a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html">Senior
+                                        Accountant</a><span class="part-time">Part-Time</span></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat aut veniam
+                                    molestiae atque dolorum omnis temporibus consequuntur saepe. Nemo atque consectetur
+                                    saepe corporis odit in dicta reprehenderit, officiis, praesentium?</p>
+                                <div class="job-tag">
+                                    <div class="pull-left">
+                                        <div class="meta-tag">
+                                            <span><a href="https://demo.graygrids.com/themes/jobboard-demo/browse-categories.html"><i
+                                                            class="ti-home"></i>Finance</a></span>
+                                            <span><i class="ti-location-pin"></i>Delaware, USA</span>
+                                            <span><i class="ti-time"></i>60/Hour</span>
+                                        </div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <div class="icon">
+                                            <i class="ti-heart"></i>
+                                        </div>
+                                        <a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html"
+                                           class="btn btn-common btn-rm">Apply Job</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-list">
+                            <div class="thumb">
+                                <a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html"><img
+                                            src="{{ asset('/build/img-4.jpg') }}" alt=""></a>
+                            </div>
+                            <div class="job-list-content">
+                                <h4><a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html">Fullstack web
+                                        developer needed</a><span class="full-time">Full-Time</span></h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat aut veniam
+                                    molestiae atque dolorum omnis temporibus consequuntur saepe. Nemo atque consectetur
+                                    saepe corporis odit in dicta reprehenderit, officiis, praesentium?</p>
+                                <div class="job-tag">
+                                    <div class="pull-left">
+                                        <div class="meta-tag">
+                                            <span><a href="https://demo.graygrids.com/themes/jobboard-demo/browse-categories.html"><i
+                                                            class="ti-desktop"></i>Technologies</a></span>
+                                            <span><i class="ti-location-pin"></i>New York, USA</span>
+                                            <span><i class="ti-time"></i>60/Hour</span>
+                                        </div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <div class="icon">
+                                            <i class="ti-heart"></i>
+                                        </div>
+                                        <a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html"
+                                           class="btn btn-common btn-rm">Apply Job</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="showing pull-left">
+                            <a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">Showing
+                                <span>6-10</span> Of 24 Jobs</a>
+                        </div>
+                        <ul class="pagination pull-right">
+                            <li class="active"><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#"
+                                                  class="btn btn-common"><i class="ti-angle-left"></i> prev</a></li>
+                            <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">1</a></li>
+                            <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">2</a></li>
+                            <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">3</a></li>
+                            <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">4</a></li>
+                            <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">5</a></li>
+                            <li class="active"><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#"
+                                                  class="btn btn-common">Next <i class="ti-angle-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endblock %}
+    <footer>
+
+        <section class="footer-Content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="widget">
+                            <h3 class="block-title"><img src="{{ asset('/build/logo.png') }}" class="img-responsive"
+                                                         alt="Footer Logo"></h3>
+                            <div class="textwidget">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est,
+                                    et euismod purus suscipit quis. Etiam euismod ornare elementum. Sed ex est, consectetur
+                                    eget facilisis sed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="widget">
+                            <h3 class="block-title">Quick Links</h3>
+                            <ul class="menu">
+                                <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">About Us</a>
+                                </li>
+                                <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">Support</a>
+                                </li>
+                                <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">License</a>
+                                </li>
+                                <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">Terms
+                                        Conditions</a></li>
+                                <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="widget">
+                            <h3 class="block-title">Trending Jobs</h3>
+                            <ul class="menu">
+                                <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">Android
+                                        Developer</a></li>
+                                <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">Senior
+                                        Accountant</a></li>
+                                <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">Frontend
+                                        Developer</a></li>
+                                <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">Junior
+                                        Tester</a></li>
+                                <li><a href="https://demo.graygrids.com/themes/jobboard-demo/index-03.html#">Project
+                                        Manager</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="widget">
+                            <h3 class="block-title">Follow Us</h3>
+                            <div class="bottom-social-icons social-icon">
+                                <a class="twitter" href="https://twitter.com/GrayGrids"><i class="ti-twitter-alt"></i></a>
+                                <a class="facebook" href="https://web.facebook.com/GrayGrids"><i
+                                            class="ti-facebook"></i></a>
+                                <a class="youtube" href="https://youtube.com/"><i class="ti-youtube"></i></a>
+                                <a class="dribble" href="https://dribbble.com/GrayGrids"><i class="ti-dribbble"></i></a>
+                                <a class="linkedin" href="https://www.linkedin.com/GrayGrids"><i
+                                            class="ti-linkedin"></i></a>
+                            </div>
+                            <p>Join our mailing list to stay up to date and get notices about our new releases</p>
+                            <form class="subscribe-box">
+                                <input type="text" placeholder="Your email">
+                                <input type="submit" class="btn-system" value="Send">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="site-info text-center">
+                            <p>All Rights reserved 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script type="text/javascript" src="{{ asset('/build/jquery-min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/material.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/material-kit.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/jquery.parallax.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/owl.carousel.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/jquery.slicknav.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/main.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/jquery.counterup.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/waypoints.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/jasny-bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/bootstrap-select.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/form-validator.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/contact-form-script.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/jquery.themepunch.revolution.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/build/jquery.themepunch.tools.min.js') }}"></script>
+</body>
+</html>

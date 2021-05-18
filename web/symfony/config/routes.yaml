@@ -1,0 +1,35 @@
+app_landing:
+    path: /
+    controller: App\Controller\LandingController::landing
+
+app_landing_candidate:
+    path: /candidate
+    controller: App\Controller\LandingController::landingCandidate
+
+app_landing_company:
+    path: /company
+    controller: App\Controller\LandingController::landingCompany
+
+app_landing_redirect:
+    path: /redirect
+    controller: App\Controller\LandingController::landingRedirect
+
+# -- CANDIDATE
+
+app_candidate_dashboard:
+    path: /candidate/dashboard
+    controller: App\Controller\Candidate\DashboardController::dashboard
+
+app_candidate_search_jobs:
+    path: /candidate/search-jobs
+    controller: App\Controller\Candidate\SearchJobsController::search
+
+app_candidate_jobs:
+    path: /candidate/jobs
+    controller: App\Controller\Candidate\JobsController::jobs
+
+# -- COMPANY
+
+app_company_dashboard:
+    path: /company/dashboard
+    controller: App\Controller\Company\DashboardController::dashboard

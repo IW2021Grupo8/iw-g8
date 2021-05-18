@@ -1,0 +1,117 @@
+{% extends 'base.html.twig' %}
+
+{% set current = 'login' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block body %}
+    <div class="page-header" style="background-color: #777;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-wrapper">
+                        <h2 class="product-title">Mi cuenta</h2>
+                        <ol class="breadcrumb">
+                            <li><a href="{{ path('app_landing') }}">Inicio</a></li>
+                            <li><a href="{{ path('app_login') }}">Mi cuenta</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content" class="my-account">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 cd-user-modal">
+                    <div class="my-account-form">
+                        <ul class="cd-switcher">
+                            <li><a class="selected" href="#0">INICIAR SESIÓN</a></li>
+                        </ul>
+                        <div id="cd-login" class="is-selected">
+                            <div class="page-login-form">
+                                <form method="post" role="form" class="login-form">
+                                    {% if error %}
+                                        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                                    {% endif %}
+                                    {% if app.user %}
+                                        <div class="mb-3">
+                                            Has iniciado sesión como {{ app.user.username }}, <a href="{{ path('app_logout') }}">salir</a>
+                                        </div>
+                                    {% endif %}
+                                    <div class="form-group is-empty">
+                                        <div>
+                                            <label for="inputEmail">Correo electrónico</label>
+                                            <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+                                        </div>
+                                        <span class="material-input"></span>
+                                    </div>
+                                    <div class="form-group is-empty">
+                                        <div>
+                                            <label for="inputPassword">Contraseña</label>
+                                            <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+                                        </div>
+                                        <span class="material-input"></span>
+                                    </div>
+                                    <input type="hidden" name="_csrf_token"
+                                           value="{{ csrf_token('authenticate') }}" />
+                                    <button class="btn btn-common log-btn">Entrar</button>
+                                    <div class="checkbox-item">
+                                        <p class="cd-form-bottom-message"><a href="#0">¿Olvidaste tu contraseña?</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div id="cd-signup">
+                            <div class="page-login-form register">
+                                <form role="form" class="login-form">
+                                    <div class="form-group is-empty">
+                                        <div class="input-icon">
+                                            <i class="ti-user"></i>
+                                            <input type="text" id="sender-email" class="form-control" name="name" placeholder="Username">
+                                        </div>
+                                        <span class="material-input"></span></div>
+                                    <div class="form-group is-empty">
+                                        <div class="input-icon">
+                                            <i class="ti-email"></i>
+                                            <input type="text" id="sender-email" class="form-control" name="email" placeholder="Email">
+                                        </div>
+                                        <span class="material-input"></span></div>
+                                    <div class="form-group is-empty">
+                                        <div class="input-icon">
+                                            <i class="ti-lock"></i>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <span class="material-input"></span></div>
+                                    <div class="form-group is-empty">
+                                        <div class="input-icon">
+                                            <i class="ti-lock"></i>
+                                            <input type="password" class="form-control" placeholder="Repeat Password">
+                                        </div>
+                                        <span class="material-input"></span></div>
+                                    <button class="btn btn-common log-btn">Register</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="page-login-form" id="cd-reset-password">
+                            <p class="cd-form-message">¿Olvidaste tu contraseña? Por favor, introduce tu email. Recibirás un enlace para restaurar tu contraseña.</p>
+                            <form class="cd-form">
+                                <div class="form-group is-empty">
+                                    <div class="input-icon">
+                                        <label for="inputEmail">Correo electrónico</label>
+                                        <input type="email" value="" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+                                    </div>
+                                    <span class="material-input"></span></div>
+                                <p class="fieldset">
+                                    <button class="btn btn-common log-btn" type="submit">Cambiar contraseña</button>
+                                </p>
+                            </form>
+                            <p class="cd-form-bottom-message"><a href="#0">Volver a iniciar sesión</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
