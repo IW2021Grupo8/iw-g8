@@ -18,4 +18,21 @@ class JobOfferRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, JobOffer::class);
     }
+
+    public function all(int $page, int $itemPerPage, array $filters) {
+        $query = $this->createQueryBuilder('jo');
+        $query->orderBy('jo.publicationDate', 'DESC');
+        $query->setMaxResults($itemPerPage);
+        $query->setFirstResult($itemPerPage * ($page - 1));
+
+        $query->andWhere('jo.deleted = :deleted');
+        $query->setParameter('deleted', 0);
+
+        if (true === isset($filters['q'])) {
+            $query->andWhere('jo.name LIKE :q OR jo.message LIKE :q');
+            $query->setParameter('q', '%' . trim($filters['q']) . '%');
+        }
+
+        return $query->getQuery()->getResult();
+    }
 }
