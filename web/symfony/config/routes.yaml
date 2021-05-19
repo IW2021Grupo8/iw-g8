@@ -3,11 +3,11 @@ app_landing:
     controller: App\Controller\LandingController::landing
 
 app_landing_candidate:
-    path: /candidate
+    path: /register/candidate
     controller: App\Controller\LandingController::landingCandidate
 
 app_landing_company:
-    path: /company
+    path: /register/company
     controller: App\Controller\LandingController::landingCompany
 
 app_landing_redirect:
