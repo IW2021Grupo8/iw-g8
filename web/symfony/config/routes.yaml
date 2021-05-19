@@ -28,6 +28,10 @@ app_candidate_jobs:
     path: /candidate/jobs
     controller: App\Controller\Candidate\JobsController::jobs
 
+app_candidate_inscription:
+    path: /candidate/jobs/{id}/inscription
+    controller: App\Controller\Candidate\JobsController::inscription
+
 # -- COMPANY
 
 app_company_dashboard:

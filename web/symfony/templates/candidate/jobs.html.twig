@@ -22,16 +22,40 @@
             </div>
         </div>
     </div>
-    <div id="content" class="my-account">
+    <div id="content">
         <div class="container">
+            <h2 class="section-title">Mis solicitudes</h2>
             <div class="row">
                 {% if jobs is empty %}
                     <div class="alert alert-info alert-dismissable">
                         No has realizado ninguna solicitud de empleo.
                     </div>
                 {% else %}
-                    {% for jobs in job %}
-                        {{ job.name }}
+                    {% for inscription in inscriptions %}
+                    {% for job in jobs %}
+                        {% if inscription.jobOffer.id == job.id %}
+                        <div class="job-list">
+                            <div class="job-list-content">
+                                <h4>{{ job.name }}<span class="full-time">pendiente</span></h4>
+                                {{ job.description |raw }}
+                                <div class="job-tag">
+                                    <div class="pull-right">
+                                        <div class="meta-tag">
+                                            <div class="btn btn-primary">
+                                                INSCRITO<div class="ripple-container"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull-left">
+                                        <div class="meta-tag">
+                                            <span>{{ job.vacancies }} vacantes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
                     {% endfor %}
                 {% endif %}
             </div>

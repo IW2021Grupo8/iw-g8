@@ -7,6 +7,11 @@
 {% endblock menu %}
 
 {% block body %}
+    <section id="slider">
+        <div class="tp-banner-container" style="overflow: visible;">
+            <img src="{{ asset('/build/banner4.png') }}" style="width:100%" />
+        </div>
+    </section>
     <div class="page-header" style="background-color: #777;">
         <div class="container">
             <div class="row">
@@ -29,15 +34,24 @@
             <div class="row">
                 <div class="col-md-12">
                     {% for job in jobs %}
+                        {% set hasInscription = false %}
+                        {% for inscription in inscriptions %}
+                            {% if inscription.jobOffer.id == job.id %}
+                                {% set hasInscription = true %}
+                            {% endif %}
+                        {% endfor %}
+                        {% if not hasInscription%}
                         <div class="job-list">
                             <div class="job-list-content">
-                                <h4>{{ job.name }}<span class="full-time">2 meses</span></h4>
+                                <h4>{{ job.name }}</h4>
                                 {{ job.description |raw }}
                                 <div class="job-tag">
                                     <div class="pull-right">
                                         <div class="meta-tag">
                                             <div class="btn btn-common btn-rm">
-                                                Inscribirme<div class="ripple-container"></div>
+                                                <a href="{{ path('app_candidate_inscription', {id: job.id}) }}" style="color:white;">
+                                                    Inscribirme</a>
+                                                <div class="ripple-container"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -49,7 +63,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        {% endif %}
                     {% else %}
                         <div class="alert alert-info alert-dismissable">
                             No hay elementos disponibles.
