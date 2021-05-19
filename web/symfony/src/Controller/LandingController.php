@@ -23,7 +23,10 @@ class LandingController extends AbstractController
             return $this->redirectToRoute('app_landing_redirect');
         }
 
-        return $this->render('landing/landing_candidate.html.twig', []);
+        return $this->render('landing/landing_candidate.html.twig', [
+            'last_username' => false,
+            'error' => false,
+        ]);
     }
     public function landingCompany(): Response
     {
@@ -31,7 +34,10 @@ class LandingController extends AbstractController
             return $this->redirectToRoute('app_landing_redirect');
         }
 
-        return $this->render('landing/landing_company.html.twig', []);
+        return $this->render('landing/landing_company.html.twig', [
+            'last_username' => false,
+            'error' => false,
+        ]);
     }
 
     public function landingRedirect(): Response
