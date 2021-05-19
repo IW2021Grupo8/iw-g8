@@ -25,6 +25,15 @@
     <div id="content" class="my-account">
         <div class="container">
             <div class="row">
+                {% if jobs is empty %}
+                    <div class="alert alert-info alert-dismissable">
+                        No has realizado ninguna solicitud de empleo.
+                    </div>
+                {% else %}
+                    {% for jobs in job %}
+                        {{ job.name }}
+                    {% endfor %}
+                {% endif %}
             </div>
         </div>
     </div>
