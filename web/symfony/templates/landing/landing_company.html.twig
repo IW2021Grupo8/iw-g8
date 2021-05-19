@@ -1,0 +1,165 @@
+{% extends 'base.html.twig' %}
+
+{% set current = 'login' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block body %}
+    <section id="slider">
+        <div class="tp-banner-container" style="overflow: visible;">
+            <img src="{{ asset('/build/banner1.png') }}" style="width:100%" />
+        </div>
+    </section>
+    <div class="page-header" style="background-color: #ff4f57;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-wrapper">
+                        <h2 class="product-title">Empresarios</h2>
+                        <ol class="breadcrumb">
+                            <li><a href="{{ path('app_landing') }}">Inicio</a></li>
+                            <li><a href="{{ path('app_login') }}">Empresas</a></li>
+                        </ol>
+                    </div>
+                    <div>
+                        <p style="text-align: center; color: white; font-size: 20px; padding-bottom: 10px;">Regístrate en FarmJob para publicar tus ofertas.</p>
+                        <p style="text-align: center; color: white; font-size: 20px; padding-bottom: 10px;">Encuentra a los operarios y cuadrillas que más se adapten.</p>
+                        <p style="text-align: center; color: white; font-size: 20px;">Todo esto y más en un solo clic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content" class="my-account">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 cd-user-modal">
+                    <div class="my-account-form">
+                        <ul class="cd-switcher">
+                            <li><a href="#0">INICIAR SESIÓN</a></li>
+                            <li><a href="#0" class="selected">REGISTRO</a></li>
+                        </ul>
+                        <div id="cd-login">
+                            <div class="page-login-form">
+                                <form method="post" role="form" class="login-form">
+                                    {% if error %}
+                                        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                                    {% endif %}
+                                    {% if app.user %}
+                                        <div class="mb-3">
+                                            Has iniciado sesión como {{ app.user.username }}, <a href="{{ path('app_logout') }}">salir</a>
+                                        </div>
+                                    {% endif %}
+                                    <div class="form-group is-empty">
+                                        <div>
+                                            <label for="inputEmail">Correo electrónico</label>
+                                            <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+                                        </div>
+                                        <span class="material-input"></span>
+                                    </div>
+                                    <div class="form-group is-empty">
+                                        <div>
+                                            <label for="inputPassword">Contraseña</label>
+                                            <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+                                        </div>
+                                        <span class="material-input"></span>
+                                    </div>
+                                    <input type="hidden" name="_csrf_token"
+                                           value="{{ csrf_token('authenticate') }}" />
+                                    <button class="btn btn-common log-btn">Entrar</button>
+                                    <div class="checkbox-item">
+                                        <p class="cd-form-bottom-message"><a href="#0">¿Olvidaste tu contraseña?</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div id="cd-signup" class="is-selected">
+                            <div class="page-login-form register">
+                                <form role="form" class="login-form">
+                                    <div class="form-group is-empty">
+                                        <div class="input-icon">
+                                            <label for="inputEmail">Nombre</label>
+                                            <input type="text" id="sender-email" class="form-control" name="email">
+                                        </div>
+                                        <span class="material-input"></span>
+                                    </div>
+                                    <div class="form-group is-empty">
+                                        <div class="input-icon">
+                                            <label for="inputEmail">Apellidos</label>
+                                            <input type="text" id="sender-email" class="form-control" name="email">
+                                        </div>
+                                        <span class="material-input"></span>
+                                    </div>
+                                    <div class="form-group is-empty">
+                                        <div class="input-icon">
+                                            <label for="inputEmail">Correo electrónico</label>
+                                            <input type="text" id="sender-email" class="form-control" name="email">
+                                        </div>
+                                        <span class="material-input"></span>
+                                    </div>
+                                    <div class="form-group is-empty">
+                                        <div class="input-icon">
+                                            <label for="inputEmail">Contraseña</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                        <span class="material-input"></span>
+                                    </div>
+                                    <div class="form-group is-empty">
+                                        <div class="input-icon">
+                                            <label for="inputEmail">Repite contraseña</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                        <span class="material-input"></span>
+                                    </div>
+                                    <hr />
+                                    <div class="form-group is-empty">
+                                        <div class="input-icon">
+                                            <label for="inputEmail">Nombre de la empresa</label>
+                                            <input type="text" id="sender-email" class="form-control" name="email">
+                                        </div>
+                                        <span class="material-input"></span>
+                                    </div>
+                                    <div class="form-group is-empty">
+                                        <div class="input-icon">
+                                            <label for="inputEmail">País</label>
+                                            <div style="border: 1px solid #ddd;">
+                                                <select class="dropdown-product selectpicker">
+                                                    <option selected>España</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <span class="material-input"></span>
+                                    </div>
+                                    <div class="form-group is-empty">
+                                        <div class="input-icon">
+                                            <label for="inputEmail">CIF</label>
+                                            <input type="text" id="sender-email" class="form-control" name="email">
+                                        </div>
+                                        <span class="material-input"></span>
+                                    </div>
+                                    <button class="btn btn-common log-btn">Guardar registro</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="page-login-form" id="cd-reset-password">
+                            <p class="cd-form-message">¿Olvidaste tu contraseña? Por favor, introduce tu email. Recibirás un enlace para restaurar tu contraseña.</p>
+                            <form class="cd-form">
+                                <div class="form-group is-empty">
+                                    <div class="input-icon">
+                                        <label for="inputEmail">Correo electrónico</label>
+                                        <input type="email" value="" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+                                    </div>
+                                    <span class="material-input"></span></div>
+                                <p class="fieldset">
+                                    <button class="btn btn-common log-btn" type="submit">Cambiar contraseña</button>
+                                </p>
+                            </form>
+                            <p class="cd-form-bottom-message"><a href="#0">Volver a iniciar sesión</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

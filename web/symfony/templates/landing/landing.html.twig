@@ -1,3 +1,66 @@
 {% extends 'base.html.twig' %}
 
 {% set current = 'landing' %}
+
+{% block body %}
+        <section id="slider">
+            <div class="tp-banner-container" style="overflow: visible;">
+                <img src="{{ asset('/build/banner3.png') }}" style="width:100%" />
+            </div>
+        </section>
+
+        <section class="find-job section">
+            <div class="container">
+                <h2 class="section-title">Empleos publicados recientemente</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="job-list">
+                            <div class="job-list-content">
+                                <h4><a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html">Vendimia </a><span class="full-time">2 meses</span></h4>
+                                <p>La cosecha de las uvas para el vino, se realiza en nuestro territorio entre julio y octubre, dependiendo de las condiciones climáticas, de la zona de producción, el tipo de uva y el tipo de vino que se quiera obtener.</p>
+                                <div class="job-tag">
+                                    <div class="pull-left">
+                                        <div class="meta-tag">
+                                            <span>Sevilla</span>
+                                            <span>13€/hora</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-list">
+                            <div class="job-list-content">
+                                <h4><a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html">Mantenimiento agrícola</a><span class="part-time">6 mes</span></h4>
+                                <p>Para importante empresa del sector agrario estamos buscando un peón agrícola de mantenimiento (H/M) para realizar las siguientes tareas:
+                                    - Reparación de sistema de riego.
+                                    - Mantenimiento de las instalaciones de la finca en general.
+                                    - Mantenimiento de alambrados.</p>
+                                <div class="job-tag">
+                                    <div class="pull-left">
+                                        <div class="meta-tag">
+                                            <span>Ciudad real</span>
+                                            <span>9€/hora</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-list">
+                            <div class="job-list-content">
+                                <h4><a href="https://demo.graygrids.com/themes/jobboard-demo/job-details.html">Peón agrícola</a><span class="full-time">4 meses</span></h4>
+                                <p>Se necesita peón agrícola para la realización de diversas tareas del campo, como recogida o recoleccion de aceituna, quitar varetas o poda de olivar. Disponemos de maquinaria y vehículo propios.</p>
+                                <div class="job-tag">
+                                    <div class="pull-left">
+                                        <div class="meta-tag">
+                                            <span>Jaén</span>
+                                            <span>10€/hora</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endblock %}
