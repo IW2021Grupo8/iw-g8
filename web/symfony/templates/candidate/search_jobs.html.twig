@@ -30,7 +30,11 @@
     <div id="content">
         <div class="container">
             <h2 class="section-title">Buscador de empleo</h2>
-
+            {% if message is defined and message is not empty %}
+                <div class="alert alert-success alert-dismissable">
+                    Tu solicitud se ha registrado correctamente.
+                </div>
+            {% endif %}
             <div class="row">
                 <div class="col-md-12">
                     {% for job in jobs %}
