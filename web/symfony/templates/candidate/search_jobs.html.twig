@@ -35,6 +35,43 @@
                     Tu solicitud se ha registrado correctamente.
                 </div>
             {% endif %}
+            <form class="">
+                <div class="form-group is-empty">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input name="q" type="text" class="form-control" placeholder="Buscar empleo">
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 10px">
+                        <div class="col-md-6">
+                            <label class="control-label" for="textarea">Tipo de cultivo</label>
+                            <div style="border: 1px solid #ddd;">
+                                <select class="dropdown-product selectpicker">
+                                    <option>Selecciona un cultivo...</option>
+                                    <option>Trigo</option>
+                                    <option>Fresa</option>
+                                    <option>Olivo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label" for="textarea">Fecha de inicio</label>
+                            <input type="text" class="form-control" placeholder="e.g 01/07/2021">
+                        </div>
+                    </div>
+                    <span class="material-input"></span><span class="material-input"></span>
+                </div>
+                <div class="form-group">
+                    <div class="button-group">
+                        <div class="action-buttons">
+                            <div class="upload-button">
+                                <button class="btn btn-primary">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <hr />
             <div class="row">
                 <div class="col-md-12">
                     {% for job in jobs %}
