@@ -18,4 +18,4 @@ El trabajo de este producto se ha distribuido en los siguientes sprints:
 * [Sprint 6](sprint6.md)
 * [Sprint 7](sprint7.md)
 * [Sprint 8](sprint8.md)
-* [Sprint 9](sprint8.md)
+* [Sprint 9](sprint9.md)
