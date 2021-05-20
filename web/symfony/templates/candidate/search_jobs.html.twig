@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="breadcrumb-wrapper">
-                        <h2 class="product-title">Busca un chachi trabajo</h2>
+                        <h2 id="search" class="product-title">Busca un chachi trabajo</h2>
                         <ol class="breadcrumb">
                             <li><a href="{{ path('app_candidate_dashboard') }}">Inicio</a></li>
                             <li><a href="{{ path('app_candidate_search_jobs') }}">Búsqueda de trabajos</a></li>
@@ -35,7 +35,7 @@
                     Tu solicitud se ha registrado correctamente.
                 </div>
             {% endif %}
-            <form class="">
+            <form action="#search">
                 <div class="form-group is-empty">
                     <div class="row">
                         <div class="col-md-12">

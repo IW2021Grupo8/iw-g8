@@ -29,7 +29,7 @@ class JobOfferRepository extends ServiceEntityRepository
         $query->setParameter('deleted', 0);
 
         if (true === isset($filters['q'])) {
-            $query->andWhere('jo.name LIKE :q OR jo.message LIKE :q');
+            $query->andWhere('jo.name LIKE :q OR jo.description LIKE :q');
             $query->setParameter('q', '%' . trim($filters['q']) . '%');
         }
 
